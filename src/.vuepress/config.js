@@ -79,6 +79,7 @@ module.exports = {
       clientId: '3ab954a3c8d256acad94',
       clientSecret: 'c1f9253a9e642e4d7913517e527d96fdd401eb9e',
       prefix: '[Comments] ',
+      labels: ['comment']
     },
     // 分页配置 (可选)
     pagination: {
