@@ -1,6 +1,6 @@
 module.exports = {
   title: 'ihaoze',
-  description: 'when your talent can\'t support your ambition, you should calm down and lear',
+  description: 'when your talent can\'t support your ambition, you should calm down and learn',
   theme: 'meteorlxy',
   themeConfig: {
     lang: Object.assign(require('vuepress-theme-meteorlxy/lib/langs/zh-CN'), {
@@ -69,6 +69,7 @@ module.exports = {
     nav: [
       { text: 'Home', link: '/', exact: true },
       { text: 'Posts', link: '/posts/', exact: false },
+      { text: 'LeetCode', link: '/leetcode/', exact: false },
       { text: 'Github', link: 'https://github.com/lhz960904' },
     ],
 
