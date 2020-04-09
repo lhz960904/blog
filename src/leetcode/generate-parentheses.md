@@ -3,7 +3,7 @@ layout: LeetCodeContent
 title: 22. 括号生成
 difficulty: 1
 leetcodeTags:
-  - 广度优先搜索
+  - 深度优先搜索
 ---
 
 
