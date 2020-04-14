@@ -5,7 +5,7 @@ difficulty: 1
 leetcodeTags:
   - 双指针
   - 哈希表
-  - 字符串
+  - 滑动窗口
 ---
 
 
@@ -70,7 +70,7 @@ var lengthOfLongestSubstring = function(s) {
 
 ## 方法二
 
-**滑动窗口**。和我想的方法一很像。只是j不需要一直从i的下一个开始。set集合可以放到外面。
+**滑动窗口**
 
 ```javascript
 var lengthOfLongestSubstring = function(s) {
