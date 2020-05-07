@@ -56,7 +56,7 @@ module.exports = {
       poweredBy: true,
       // 是否显示使用的主题
       poweredByTheme: true,
-      custom: `<a target="_blank" href="www.beian.miit.gov.cn">黑ICP备17005691号-1</a>`
+      // custom: `<a target="_blank" href="www.beian.miit.gov.cn">黑ICP备17005691号-1</a>`
     },
     // 个人信息卡片相关设置 (可选)
     infoCard: {
