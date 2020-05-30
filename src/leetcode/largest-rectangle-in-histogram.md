@@ -80,7 +80,7 @@ var largestRectangleArea = function(heights) {
 分治算法，最大面积可能情况：
  1. 找到数组中最小的高度，然后尽可能俩边延伸
  2. 最小的高度左侧(子问题)
- 3. 最大的高度右侧(子问题)
+ 3. 最小的高度右侧(子问题)
 
 ```javascript
 var largestRectangleArea = function(heights) {
@@ -109,7 +109,7 @@ var largestRectangleArea = function(heights) {
 ```
 ### 方法4👍👏
 
-始终维持递增栈，当碰到比栈顶还要小的元素，依次出栈，知道栈顶元素小于当前元素。 出栈的这些元素依次以自身为左侧，计算面积(很明显，越靠左的高度越小，所造成的宽度也越大)
+始终维持递增栈，当碰到比栈顶还要小的元素，依次出栈，直到栈顶元素小于当前元素。 出栈的这些元素依次以自身为左侧，计算面积(很明显，越靠左的高度越小，所造成的宽度也越大)
 
 ```javascript
 var largestRectangleArea = function(heights) {
