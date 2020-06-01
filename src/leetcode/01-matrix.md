@@ -1,6 +1,6 @@
 ---
 layout: LeetCodeContent
-title: 542. 01 矩阵
+title: 542. 零一矩阵
 difficulty: 1
 leetcodeTags:
   - 广度优先搜索

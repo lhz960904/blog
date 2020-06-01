@@ -1,6 +1,6 @@
 ---
 layout: LeetCodeContent
-title: 面试题 01-07.旋转矩阵
+title: 面试题01.07. 旋转矩阵
 difficulty: 1
 leetcodeTags:
   - 数组

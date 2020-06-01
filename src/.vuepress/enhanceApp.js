@@ -7,15 +7,26 @@ export default ({
 }) => {
   let list = siteData.pages.filter(page => /\/leetcode\/\w+/.test(page.path));
   list = list.map((item, index) => {
-    const idx = item.title.indexOf('.')
+    const idx = item.title.search(/[^面试题|\s|\-|\d|.]/)
+    
     return {
       ...item,
-      index: item.title.substr(0, idx),
-      name: item.title.substr(idx + 1),
+      index: item.title.substr(0, idx).trim().replace(/.$/, ''),
+      name: item.title.substr(idx),
       difficulty: item.frontmatter.difficulty,
       prev: list[index - 1] || null,
       next: list[index + 1] || null,
     }
-  }).sort((a, b) => a.index - b.index);
+  }).sort((a, b) => {
+    const aIdx = parseInt(a.index);
+    const bIdx = parseInt(b.index);
+    if (!Number.isNaN(aIdx) && !Number.isNaN(bIdx)) {
+      return aIdx - bIdx;
+    }
+    if (Number.isNaN(aIdx) && Number.isNaN(bIdx)) {
+      return a.index > b.index ? 1 : -1;
+    }
+    return Number.isNaN(aIdx) ? 1 : -1;
+  });
   Vue.prototype.$leetcode = list;
 }
