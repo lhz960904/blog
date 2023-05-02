@@ -9,6 +9,7 @@ export default defineConfig({
   description: "lihaoze's technology blog",
   cleanUrls: true,
   base: '/blog/',
+  outDir: "../dist",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
