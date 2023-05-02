@@ -7,12 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "docs:dev": "vitepress dev src",
     "docs:build": "vitepress build src",
-    "docs:preview": "vitepress preview src"
+    "docs:preview": "vitepress preview src",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "husky": "^8.0.3",
     "vitepress": "1.0.0-alpha.75"
   }
 }
