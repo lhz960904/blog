@@ -9,7 +9,7 @@ export default defineConfig({
   cleanUrls: true,
   base: BASE_URL,
   srcDir: './src',
-  outDir: "../dist",
+  outDir: "./dist",
   head: [
     [
       'link',
