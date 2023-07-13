@@ -14,8 +14,7 @@ export async function genFeed(config: SiteConfig) {
     language: 'zh-CN',
     // image: 'https://vuejs.org/images/logo.png',
     favicon: `${baseUrl}/favicon.ico`,
-    copyright:
-      'Copyright (c) 2023-present, HaoZe Li and blog contributors'
+    copyright: 'Copyright (c) 2023-present, HaoZe Li and blog contributors'
   })
 
   const posts = await createContentLoader('posts/*.md', {
